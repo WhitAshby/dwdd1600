@@ -1,0 +1,155 @@
+body {
+   font-family: "Plus Jakarta Sans", sans-serif;
+   margin: 0;
+}
+/*header stuff here*/
+header {
+   background-color: #e8b5bd;
+   padding: 1rem 30px;
+}
+header span {
+    color: #fa5f55;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+/* navigation stuff here */
+nav {
+    background-color: #d0b59a;
+
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 10px;
+    margin: 0;
+   display: flex;  
+}
+nav a {
+    display: block;
+    padding: .83rem .83rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+nav li.active a {
+    background-color: #fa5f55;
+    color: white;
+}
+nav li a:hover {
+    color: #e8b5bd;
+}
+/*main content stuff here */
+main {
+    padding: 1rem 10px;
+}
+main h1 {
+    font-size: 2rem;
+    color: #463d40;
+}
+main h2 {
+    color: #528ed1;
+    margin-bottom: .2rem;
+}
+main p {
+    margin: 0;
+    color: #4d7d5c; 
+}
+main ol {
+    padding: 1.5rem;
+    background-color: #efefef;
+    margin-top: 20px;
+}
+main dl dt {
+    font-size: 1rem;
+    color: #fa5f55;
+    margin-left: 20px;
+}
+main dl dd {
+    margin-bottom: 1rem;
+    color: #e8b5bd;
+}
+main ul li {
+    list-style-type: circle;
+   line-height: 125%;
+   margin-bottom: .5rem;
+   font-size: .9rem;
+   color: #528ed1;
+}
+main ol li {
+    list-style-type: decimal;
+    margin-bottom: .5rem;
+    color: #528ed1;
+}
+main p strong {
+    color: #3a5e46;
+    font-weight: bold;
+}
+main em{
+    font-weight: bold;
+}
+main address {
+    font-style: normal;
+    color: #528ed1;
+    margin: 1rem;
+    background-color: #528ed1;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid #528ed1;
+}
+main address p {
+    color: white;
+}
+main a {
+    color: #3a5e46;
+}
+main a:hover {
+    color: #fa5f55;
+}
+/*main image stuff here */
+figure.hawaii {
+    margin: 0 0 0 15px;
+    width: 40%;
+    text-align: center;
+    float: right;
+}
+figure.hawaii img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;  
+}
+figure.hawaii figcaption {
+    font-size: .8rem;
+    color: #528ed1;
+    font-style: italic;
+}
+/* gallery stuff here */
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+div.gallery figure {
+    margin: 0;
+    text-align: center;
+}
+div.gallery figcaption {
+    font-size: .8rem;
+    color: #528ed1;
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+/* footer stuff here */
+footer {
+    background-color: #d0b59a;
+    text-align: center;
+    padding: 1rem;
+    font-size:.8rem;
+    color: white;
+}
+footer p {
+    margin: 0;
+    letter-spacing: 3px;
+}
+
