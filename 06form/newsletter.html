@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Whitney Ashby">
+    <meta name="description" content="Explore the best local favorites on the North Shore of Oahu.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oxygen:wght@300;400;700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="oahu.css">
+    <title>Favorites on the North Shore of Oahu: A Guide to the Best Spots</title>
+</head>
+
+<body>
+    <!--start the page head-->
+    <header>
+        <span>North Shore, Oahu</span>
+    </header>
+    <!--start page navigations-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Learn More</a></li>
+            <li><a href="fba.html">Local Food, Beaches & Activities</a></li>
+            <li><a href="images.html">Images</a></li>
+             <li class="active"><a href="newsletter.html">Join Newsletter</a></li>
+             <li><a href="#">Thank You</a></li>
+        </ul>
+
+    </nav>
+    <!--start the main content-->
+    <main>
+        <h1>Join Newsletter</h1>
+        <form method="get" class="myWeb" action="thanks.html">
+            
+        <fieldset> 
+        <legend>Customer Information</legend>
+        <label> First Name <input type="text" name="fname" required>
+       </label>
+       <label>Last Name <input type="text" name="lname" required></label>
+       <label>Email<input type="email" name="email" required></label>
+       <label>Phone Number (Optional) <input type="tel" name="phone" required placeholder="808-123-4567"></label>
+        </fieldset>
+
+        <fieldset>
+        <legend>Newsletter Preferences</legend>
+        <label><input type="checkbox" name="updates" value="yes"> Send me updates</label>
+        <label><input type="checkbox" name="promotions" value="yes"> Send me promotions</label>
+        <label><input type="checkbox" name="both" value="yes"> Send me updates and promotions</label>
+        </fieldset>
+
+        <fieldset>
+        <legend>Preferred Contact Method</legend>
+        <label>
+        <select name="preferredcontactmethod" required>
+        <option value="email">Email</option>
+        <option value="phone">Phone</option>
+        <option value="both">Both</option>
+        </select>
+        </label>
+        </fieldset>
+
+        <label>
+            <textarea name="feedback">Your comment here</textarea>
+        </label>
+
+
+        <input type="submit" value="Subscribe" class="submit">
+        </form>
+
+   </main>
+    <!--start the footer-->
+    <footer>
+        <br>
+        <address>North Shore, Oʻahu, Hawaiʻi</address>
+        <p>&copy; 2025 Whitney Ashby &bull; All rights reserved.</p>
+        <p>For more information, visit our
+    </footer>
+    <!--end the footer-->
+</body>
+
+</html>
