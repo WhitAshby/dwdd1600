@@ -172,10 +172,10 @@ div.gallery figcaption {
     cursor: pointer;
     margin: 1rem 0 0 1vw;
 }
-
-
-
-
+.myWeb :required {
+    background-color: #e8b5bd;
+    color: #463d4a;
+}
 
 /* footer stuff here */
 footer {

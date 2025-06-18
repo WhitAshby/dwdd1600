@@ -26,7 +26,7 @@
             <li><a href="fba.html">Local Food, Beaches & Activities</a></li>
             <li><a href="images.html">Images</a></li>
             <li class="active"><a href="newsletter.html">Join Newsletter</a></li>
-            <li><a href="thanks.html"></a></li>
+            
         </ul>
 
     </nav>
@@ -54,12 +54,18 @@
         <fieldset>
         <legend>Preferred Contact Method</legend>
         <label>
-        <select name="preferredcontactmethod" required>
-        <option value="email">Email</option>
-        <option value="phone">Phone</option>
-        <option value="both">Both</option>
-        </select>
-        </label>
+         
+            <label><input type="checkbox" name="phone" value="chosen">Phone</label>
+            <label><input type="checkbox" name="email" value="chosen"> Email</label>
+            <label><input type="checkbox" name="both" value="chosen">Both</label>
+
+            <label>Preferred Frequency
+            <select name="frequency">
+            <option value="none">Please Select</option>
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            </select>
+            </label>
         </fieldset>
 
         <label>
