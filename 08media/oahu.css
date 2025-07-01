@@ -1,0 +1,272 @@
+/*prevent problems on different browser*/
+* {box-sizing: border-box;}
+
+
+
+
+
+
+body {
+   font-family: "Plus Jakarta Sans", sans-serif;
+   margin: 0;
+}
+/*header stuff here*/
+header {
+   background-color: #e8b5bd;
+   padding: 1rem 30px;
+}
+header span {
+    color: #fa5f55;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+/* small screen navigation*/
+@media only screen and (max-width: 820px) {
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        padding: .83rem .83rem;
+        color: #fa5f55;
+        text-decoration: none;
+        border-bottom: solid 1px #eeee;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    nav .active a {
+        background-color: #d0b59a;
+        color: white;
+        background-image: linear-gradient(to bottom, #cbbfb3, #d0b59a);
+    }
+
+
+
+}/* END small screen navigation*/
+
+
+
+/* LARGE screen navigation*/
+@media only screen and (min-width: 821px) {
+    nav {
+        background-color: #d0b59a;
+
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0 10px;
+        margin: 0;
+        display: flex;  
+    }
+    nav a {
+        display: block;
+        padding: .83rem .83rem;
+       text-decoration: none;
+        color: white;
+        font-weight: 700;
+    }
+    nav li.active a {
+        background-color: #fa5f55;
+        color: white;
+    }
+    nav li a:hover {
+        color: #e8b5bd;
+    }
+
+}/* END large screen navigation*/
+
+/*main content stuff here */
+main {
+    padding: 1rem 10px;
+}
+main h1 {
+    font-size: 2rem;
+    color: #463d40;
+}
+main h2 {
+    color: #528ed1;
+    margin-bottom: .2rem;
+}
+main p {
+    margin: 0;
+    color: #4d7d5c; 
+}
+main ol {
+    padding: 1.5rem;
+    background-color: #efefef;
+    margin-top: 20px;
+}
+main dl dt {
+    font-size: 1rem;
+    color: #fa5f55;
+    margin-left: 20px;
+}
+main dl dd {
+    margin-bottom: 1rem;
+    color: #e8b5bd;
+}
+main ul li {
+    list-style-type: circle;
+   line-height: 125%;
+   margin-bottom: .5rem;
+   font-size: .9rem;
+   color: #528ed1;
+}
+main ol li {
+    list-style-type: decimal;
+    margin-bottom: .5rem;
+    color: #528ed1;
+}
+main p strong {
+    color: #3a5e46;
+    font-weight: bold;
+}
+main em{
+    font-weight: bold;
+}
+main address {
+    font-style: normal;
+    color: #528ed1;
+    margin: 1rem;
+    background-color: #528ed1;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid #528ed1;
+}
+main address p {
+    color: white;
+}
+main a {
+    color: #3a5e46;
+}
+.hero {
+    width: 100%;
+    height: auto;
+}
+main a:hover {
+    color: #fa5f55;
+}
+/*main image stuff here */
+figure.hawaii {
+    margin: 0 0 0 15px;
+    width: 40%;
+    text-align: center;
+    float: right;
+}
+figure.hawaii img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2); 
+}
+figure.hawaii figcaption {
+    font-size: .8rem;
+    color: #528ed1;
+    font-style: italic;
+}
+/* gallery stuff here */
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;  
+}
+div.gallery img {
+    width: 98%;
+    height: auto;
+    border-radius: 5px; 
+}
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+div.gallery figure {
+    margin: 0;
+    text-align: center;
+}
+div.gallery figcaption {
+    font-size: .8rem;
+    color: #528ed1;
+    font-style: italic;
+    text-align: center;
+}
+
+.myWeb  fieldset {
+    border: 1px solid #d0b59a;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+.myWeb legend {
+    font-weight: bold;
+    color: #463d40;
+    font-size: .8rem;
+}
+.myWeb label, .myWeb select, .myWeb [type="text"], .myWeb [type="email"], .myWeb [type="tel"]{
+    display: block;
+    margin-bottom: .5rem;
+    color: #463d40;
+    margin: .5rem;
+}
+.myWeb textarea {
+    height: 6rem; 
+}
+.myWeb :required {
+    border: 1px solid #fda29b;
+    background-color: #f8f4f5;
+}
+.myWeb [type="submit"] {
+    background-color: #fa5f55;
+    color: white;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1rem 0 0 1vw;
+}
+.myWeb :required {
+    background-color: #e8b5bd;
+    color: #463d4a;
+}
+/* table stuff here */
+table.info {
+    width: 100%;
+    border-collapse: collapse;
+}
+table.info th {
+    background-color: #fa746a;
+    color:white;
+    padding: .5rem;  
+}
+table.info td {
+    padding: .5rem;
+    border-bottom: 1px solid #80a6d1;
+    color: #80a6d1;
+}
+table.info  tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+table.info tr:hover {
+    background-color: #c4ced8;
+    color: white;
+}
+
+
+/* footer stuff here */
+footer {
+    background-color: #d0b59a;
+    text-align: center;
+    padding: 1rem;
+    font-size:.8rem;
+    color: white;
+}
+footer p {
+    margin: 0;
+    letter-spacing: 3px;
+}
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
